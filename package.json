@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel src/index.html"
   },
   "dependencies": {
     "rxjs": "^6.5.2"

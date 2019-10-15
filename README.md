@@ -8,7 +8,7 @@ This project was made to try and recreate the classic snake game, using RxJS and
 * ~~Basic controls~~
 * ~~Basic events~~
 * Food
-* walls/Wrapping
+* Walls/Wrapping
 * More coming soon...
 
 # StackBlitz

@@ -1,15 +1,15 @@
 import { interval, timer } from "rxjs";
 import { map, take, withLatestFrom } from "rxjs/operators";
 
-import { Snake } from "./game/snake";
-import { latestDirectionObs } from "./controls/latestDirection";
+import { Snake } from "./src/game/snake";
+import { latestDirectionObs } from "./src/controls/latestDirection";
 
 import {
   UpdateAction,
   ChangeDirectionAction,
   gameState,
   stateChanges
-} from "./game/state";
+} from "./src/game/state";
 
 const c = document.getElementById("game") as HTMLCanvasElement;
 const ctx = c.getContext("2d");

@@ -1,12 +1,19 @@
+import { Direction } from '../model/direction';
+
 export class Point {
     private size: number = 30;
-    constructor(public x: number, public y: number) { }
+    constructor(public x: number, public y: number) {}
 
     public draw(ctx: CanvasRenderingContext2D) {
-        ctx.fillStyle = "black";
-        ctx.fillRect(this.x * this.size, this.y * this.size, this.size, this.size);
+        ctx.fillStyle = 'black';
+        ctx.fillRect(
+            this.x * this.size,
+            this.y * this.size,
+            this.size,
+            this.size
+        );
 
-        ctx.strokeStyle = "white";
+        ctx.strokeStyle = 'white';
         ctx.strokeRect(
             this.x * this.size,
             this.y * this.size,
@@ -15,7 +22,7 @@ export class Point {
         );
     }
 
-    public add(direction: [number, number]): Point {
+    public add(direction: Direction): Point {
         return new Point(this.x + direction[0], this.y + direction[1]);
     }
 }
